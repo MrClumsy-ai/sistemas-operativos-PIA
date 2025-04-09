@@ -87,7 +87,55 @@
 
     <main class="container">
       <h1 class="display-1">Control de concurrencia</h1>
-      <p>lorem ipsum</p>
+      <div class="p1">
+        <p>
+          El control de concurrencia se refiere al proceso de administrar el acceso y la manipulación 
+          simultáneos de una base de datos por parte de múltiples usuarios, lo que garantiza la coherencia, 
+          la integridad y el aislamiento de las transacciones de datos. Este método es esencial en las bases de datos modernas, 
+          donde varios usuarios o aplicaciones solicitan con frecuencia el acceso a los datos al mismo tiempo para mantener operaciones sin inconvenientes. 
+          Evita conflictos, interbloqueos y otras anomalías que pueden surgir debido al acceso simultáneo de datos.
+        </p>
+      </div>
+      <div class="p2">
+        <p>
+          Debido al diseño de Android, gestionar threads empleando solo paquetes java.lang.thread y java.util.current puede resultar realmente complicado. 
+          Utilizar los paquetes de threading a bajo nivel de Android significa tener que preocuparse de un montón de sincronización compleja para evitar las condiciones de carrera. 
+          Cuando una aplicación Android se inicia, el primer thread generado por su proceso es el main thread, también conocido como UI Thread, el cual es responsable de manejar toda la lógica de la interfaz de usuario. 
+          Este es el thread más importante de una aplicación. Es el responsable de manejar toda la interacción de usuario y también enlaza juntas todas las apartes móviles de la aplicación. Las tareas de larga duración invocadas 
+          en el UI serán con toda seguridad fatales para una aplicación, y aparecerá un diálogo ANR o Aplicación No Responde. Incluso las tareas pequeñas pueden comprometer la experiencia de usuario, por lo tanto la aproximación 
+          correcta es eliminar del UI Thread tanto trabajo como sea posible por medio de background threads.
+        <div class="img-conc">
+          <img class="conc_andr" src="concurrencia/mainthread.png" alt="thread">
+        </div>
+        </p>
+      </div>
+      <h2>El framework HaMeR</h2>
+        <div class="p3">
+          <p>
+            El framework HaMeR permite a los threads en background enviar mensajes o postear runnables en el UI thread y también a cualquier 
+            otro MessageQueue de un thread por medio de handlers. HaMeR hace referencia a Handler, Message y Runnable. También hay otras clases 
+            importantes que operan junto con HaMeR: Looper y MessageQueue. Estos objetos son responsables de facilitar la gestión de hilos en Android, 
+            considerando la sincronización y proveyendo de métodos fáciles para que los threads en background se comuniquen con el UI thread así como con otros threads.
+          </p>
+        </div>
+        <h2>Arquitectura de Android y su papel en la concurrencia</h2>
+        <div class="p3">
+          <p>
+            La arquitectura basada en componentes de Android añade otra complejidad llamada fuga de memoria. Una fuga de memoria se produce cuando el objeto no puede ser liberado aunque ya no sea útil. 
+            En el peor de los casos, las fugas de memoria pueden provocar un fallo en la aplicación. Sin embargo, aunque las cosas no vayan tan mal, quedarse corto de memoria puede forzar recolecciones de basura más frecuentes que causan “jank”. 
+            Las aplicaciones de Android son especialmente susceptibles a las fugas de memoria porque los ciclos de vida de algunos componentes más utilizados (Activitys, Fragments, Services, etc) no están bajo el control de la aplicación. 
+            Las instancias de esos componentes pueden convertirse fácilmente en peso muerto, por ello se consideró la idea de descargar una tarea a un hilo trabajador.
+          </p>
+        </div>
+        <div class="p4">
+          <p>
+            Desde la adopción generalizada de la arquitectura MVC, la cual es una interfaz de usuario de un solo hilo, el diseño estándar 
+            de la interfaz de usuario es una cola atendida por un único hilo, en el caso de Android es el hilo principal. El hilo principal 
+            de una aplicación se convierte en su hilo de interfaz de usuario, como parte de la inicialización, el hilo entra en un bucle cerrado. 
+            Durante el resto de vida de la aplicación, retira una a una las tareas de la cola canónica de las IU y las ejecuta. Dado que los métodos de la interfaz de usuario 
+            no intentan ser seguros para los subprocesos.  
+          </p>
+        </div>
     </main>
 
     <!-- Latest compiled JavaScript -->
