@@ -96,20 +96,31 @@
         garantizar la integridad, confidencialidad y autenticidad de los datos y
         aplicaciones.
       </p>
-      <h2>Zona de pruebas para aplicaciones</h2>
-      <p>
-        Uno de los principios fundamentales de la seguridad en Android es el
-        aislamiento de las aplicaciones. La plataforma aprovecha la protección
-        basada en el usuario de Linux para asignar un ID de usuario único (UID)
-        a cada aplicación. Este UID permite que cada app se ejecute en su propio
-        proceso, creando una “zona de pruebas” (sandbox) a nivel de kernel. Este
-        enfoque garantiza que los recursos de una aplicación estén aislados de
-        los de otras aplicaciones, lo que reduce el riesgo de que una app
-        maliciosa acceda o manipule datos de otras aplicaciones. Además, este
-        mecanismo limita el impacto de posibles vulnerabilidades, ya que una
-        brecha en una aplicación no compromete necesariamente al sistema en su
-        totalidad.
-      </p>
+      <div class="container-fluid row">
+        <div class="col-xxl-6 col-xl-8 col-lg-12">
+          <h2>Zona de pruebas para aplicaciones</h2>
+          <p>
+            Uno de los principios fundamentales de la seguridad en Android es el
+            aislamiento de las aplicaciones. La plataforma aprovecha la
+            protección basada en el usuario de Linux para asignar un ID de
+            usuario único (UID) a cada aplicación. Este UID permite que cada app
+            se ejecute en su propio proceso, creando una “zona de pruebas”
+            (sandbox) a nivel de kernel. Este enfoque garantiza que los recursos
+            de una aplicación estén aislados de los de otras aplicaciones, lo
+            que reduce el riesgo de que una app maliciosa acceda o manipule
+            datos de otras aplicaciones. Además, este mecanismo limita el
+            impacto de posibles vulnerabilidades, ya que una brecha en una
+            aplicación no compromete necesariamente al sistema en su totalidad.
+          </p>
+        </div>
+        <div class="col-xxl-6 col-xl-4 col-lg-12">
+          <img
+            src="seguridad/sandbox.jpg"
+            alt="sandbox"
+            class="rounded img-fluid"
+          />
+        </div>
+      </div>
       <h2>Firma de Apps</h2>
       <p>
         La firma de aplicaciones es otro componente esencial de la seguridad en
