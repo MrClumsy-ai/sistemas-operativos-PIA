@@ -96,7 +96,7 @@
         <!-- Fila 1 - Debe verse en 3 columnas solo si la pantalla es más grande a 992px (lg), de lo contrario será solo 1 columna. -->
         <div class="row">
             <div class="columna1 col-lg-4">
-      <img src="images_arquitectura/arquitecturaandroid.png" alt="" srcset="" class="img01">
+      <img src="images_arquitectura/arquitecturaandroid.png" alt="" srcset="" class="img1-5">
       </div>
       <div class="columna1 col-lg-8">
       <p>En el caso de Android está formada por varias capas que facilitan al desarrollador la creación 
@@ -148,7 +148,7 @@
 
           <div class="row">
               <div class="columna1 col-lg-4">
-
+                <img src="images_arquitectura/entorno_ejecucion.png" alt="" srcset="" class="img03">
               </div>
               <div class="columna1 col-lg-8">
                 <p>
@@ -169,54 +169,55 @@
           <br><br><br>
 
           <div class="row">
-            <div class="columna1 col-lg-8">
+            <div class="columna1 col-lg-9">
               <p>
                 Framework de aplicaciones. La siguiente capa está formada por todas las clases y servicios que utilizan 
                 directamente las aplicaciones para realizar sus funciones. La mayoría de los componentes de esta capa 
                 son librerías Java que acceden a los recursos de las capas anteriores a través de la máquina virtual Dalvik. 
               </p>
+              <br><br>
+              <div class="card bg-secondary">
+                <div class="card-header">
+                  <a href="#collapseOne" class="btn text-white" data-bs-toggle="collapse">
+                    ¡Haz click para daber más acerca del framework!
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="text-white">
+                      <il>
+                        <ul>Activity Manager. Se encarga de administrar la pila de actividades de nuestra aplicación así como su ciclo de vida.</ul>
+                        <ul>Windows Manager. Se encarga de organizar lo que se mostrará en pantalla. Básicamente crea las superficies en la pantalla que posteriormente pasarán a ser ocupadas por las actividades.</ul>
+                          <ul>Content Provider. Esta librería es muy interesante porque crea una capa que encapsula los datos que se compartirán entre aplicaciones para tener control sobre cómo se accede a la información.</ul>
+                            <ul>Views. En Android, las vistas los elementos que nos ayudarán a construir las interfaces de usuario: botones, cuadros de texto, listas y hasta elementos más avanzados como un navegador web o un visor de Google Maps.</ul>
+                              <ul>Notification Manager. Engloba los servicios para notificar al usuario cuando algo requiera su atención mostrando alertas en la barra de estado. Un dato importante es que esta biblioteca también permite jugar con sonidos, activar el vibrador o utilizar los LEDs del teléfono en caso de tenerlos.</ul>
+                                <ul>Package Manager. Esta biblioteca permite obtener información sobre los paquetes instalados en el dispositivo Android, además de gestionar la instalación de nuevos paquetes. Con paquete nos referimos a la forma en que se distribuyen las aplicaciones Android, estos contienen el archivo .apk, que a su vez incluyen los archivos .dex con todos los recursos y archivos adicionales que necesite la aplicación, para facilitar su descarga e instalación.</ul>
+                                  <ul>Telephony Manager. Con esta librería podremos realizar llamadas o enviar y recibir SMS/MMS, aunque no permite reemplazar o eliminar la actividad que se muestra cuando una llamada está en curso.</ul>
+                                    <ul>Resource Manager. Con esta librería podremos gestionar todos los elementos que forman parte de la aplicación y que están fuera del código, es decir, cadenas de texto traducidas a diferentes idiomas, imágenes, sonidos o layouts. En un post relacionado a la estructura de un proyecto Android veremos esto más a fondo.</ul>
+                                      <ul>Location Manager. Permite determinar la posición geográfica del dispositivo Android mediante GPS o redes disponibles y trabajar con mapas.</ul>
+                                        <ul>Sensor Manager. Nos permite manipular los elementos de hardware del teléfono como el acelerómetro, giroscopio, sensor de luminosidad, sensor de campo magnético, brújula, sensor de presión, sensor de proximidad, sensor de temperatura, etc.</ul>
+                                          <ul>Cámara: Con esta librería podemos hacer uso de la(s)  cámara(s) del dispositivo para tomar fotografías o para grabar vídeo.</ul>
+                                            <ul>Multimedia.Permiten reproducir y visualizar audio, vídeo e imágenes en el dispositivo.</ul>
+                      </il>
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
             </div>
-            <div class="columna1 col-lg-4">
-
-
+            <div class="columna1 col-lg-3">
+              <img src="images_arquitectura/Android-Framework.png" alt="" srcset="" class="img04">
             </div>
           </div>
 
           <br><br><br>
 
-          <div class="card bg-secondary">
-            <div class="card-header">
-              <a href="#collapseOne" class="btn text-white" data-bs-toggle="collapse">
-                ¡Haz click para daber más acerca del framework!
-              </a>
-            </div>
-            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-              <div class="card-body">
-                <p class="text-white">
-                  <il>
-                    <ul>Activity Manager. Se encarga de administrar la pila de actividades de nuestra aplicación así como su ciclo de vida.</ul>
-                    <ul>Windows Manager. Se encarga de organizar lo que se mostrará en pantalla. Básicamente crea las superficies en la pantalla que posteriormente pasarán a ser ocupadas por las actividades.</ul>
-                      <ul>Content Provider. Esta librería es muy interesante porque crea una capa que encapsula los datos que se compartirán entre aplicaciones para tener control sobre cómo se accede a la información.</ul>
-                        <ul>Views. En Android, las vistas los elementos que nos ayudarán a construir las interfaces de usuario: botones, cuadros de texto, listas y hasta elementos más avanzados como un navegador web o un visor de Google Maps.</ul>
-                          <ul>Notification Manager. Engloba los servicios para notificar al usuario cuando algo requiera su atención mostrando alertas en la barra de estado. Un dato importante es que esta biblioteca también permite jugar con sonidos, activar el vibrador o utilizar los LEDs del teléfono en caso de tenerlos.</ul>
-                            <ul>Package Manager. Esta biblioteca permite obtener información sobre los paquetes instalados en el dispositivo Android, además de gestionar la instalación de nuevos paquetes. Con paquete nos referimos a la forma en que se distribuyen las aplicaciones Android, estos contienen el archivo .apk, que a su vez incluyen los archivos .dex con todos los recursos y archivos adicionales que necesite la aplicación, para facilitar su descarga e instalación.</ul>
-                              <ul>Telephony Manager. Con esta librería podremos realizar llamadas o enviar y recibir SMS/MMS, aunque no permite reemplazar o eliminar la actividad que se muestra cuando una llamada está en curso.</ul>
-                                <ul>Resource Manager. Con esta librería podremos gestionar todos los elementos que forman parte de la aplicación y que están fuera del código, es decir, cadenas de texto traducidas a diferentes idiomas, imágenes, sonidos o layouts. En un post relacionado a la estructura de un proyecto Android veremos esto más a fondo.</ul>
-                                  <ul>Location Manager. Permite determinar la posición geográfica del dispositivo Android mediante GPS o redes disponibles y trabajar con mapas.</ul>
-                                    <ul>Sensor Manager. Nos permite manipular los elementos de hardware del teléfono como el acelerómetro, giroscopio, sensor de luminosidad, sensor de campo magnético, brújula, sensor de presión, sensor de proximidad, sensor de temperatura, etc.</ul>
-                                      <ul>Cámara: Con esta librería podemos hacer uso de la(s)  cámara(s) del dispositivo para tomar fotografías o para grabar vídeo.</ul>
-                                        <ul>Multimedia.Permiten reproducir y visualizar audio, vídeo e imágenes en el dispositivo.</ul>
-                  </il>
-                </p>
-              </div>
-            </div>
-          </div>
-
+          
           <br><br><br>
 
           <div class="row">
             <div class="columna1 col-lg-4">
-              
+              <img src="images_arquitectura/aplicacion-Android.jpg" alt="" srcset="" class="img1-5">
             </div>
             <div class="columna1 col-lg-8">
               <p>
