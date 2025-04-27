@@ -96,9 +96,7 @@
         <!-- Fila 1 - Debe verse en 3 columnas solo si la pantalla es más grande a 992px (lg), de lo contrario será solo 1 columna. -->
         <div class="row">
             <div class="columna1 col-lg-4">
-      <center>
       <img src="images_arquitectura/arquitecturaandroid.png" alt="" srcset="" class="img01">
-      </center>
       </div>
       <div class="columna1 col-lg-8">
       <p>En el caso de Android está formada por varias capas que facilitan al desarrollador la creación 
@@ -115,7 +113,7 @@
           <div class="card bg-secondary">
             <div class="card-header">
               <a href="#collapseOne" class="btn text-white" data-bs-toggle="collapse">
-                Hazme click!
+                ¡Haz click para daber más acerca del núcleo!
               </a>
             </div>
             <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
@@ -132,19 +130,104 @@
 
           <br><br><br>
 
+          <div class="row">
+            <div class="columna1 col-lg-8">
           <p>La siguiente capa que se sitúa justo sobre el kernel la componen las bibliotecas nativas de 
             Android, también llamadas librerías. Están escritas en C o C++ y compiladas para la arquitectura 
             hardware específica del teléfono. Estas normalmente están hechas por el fabricante, quien también 
             se encarga de instalarlas en el dispositivo antes de ponerlo a la venta. El objetivo de las librerías 
             es proporcionar funcionalidad a las aplicaciones para tareas que se repiten con frecuencia, evitando 
             tener que codificarlas cada vez y garantizando que se llevan a cabo de la forma “más eficiente”.</p>
+            </div>
+            <div class="columna2 col-lg-4">
+              <img src="images_arquitectura/fragmentacion_android.png" alt="" srcset="" class="img02">
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <div class="row">
+              <div class="columna1 col-lg-4">
+
+              </div>
+              <div class="columna1 col-lg-8">
+                <p>
+                  Entorno de ejecución. Como podemos apreciar en el diagrama, el entorno de ejecución de Android no 
+                  se considera una capa en sí mismo, dado que también está formado por librerías. Aquí encontramos 
+                  las librerías con la funcionalidades habituales de Java así como otras específicas de Android.
+                </p>
+                <p>
+                El componente principal del entorno de ejecución de Android es la máquina virtual Dalvik. Las aplicaciones se 
+                codifican en Java y son compiladas en un formato específico para que esta máquina virtual las ejecute. La ventaja 
+                de esto es que las aplicaciones se compilan una única vez y de esta forma estarán listas para distribuirse con la 
+                total garantía de que podrán ejecutarse en cualquier dispositivo Android que disponga de la versión mínima del sistema 
+                operativo que requiera la aplicación.
+                </p>
+              </div>
+          </div>
+
+          <br><br><br>
+
+          <div class="row">
+            <div class="columna1 col-lg-8">
+              <p>
+                Framework de aplicaciones. La siguiente capa está formada por todas las clases y servicios que utilizan 
+                directamente las aplicaciones para realizar sus funciones. La mayoría de los componentes de esta capa 
+                son librerías Java que acceden a los recursos de las capas anteriores a través de la máquina virtual Dalvik. 
+              </p>
+            </div>
+            <div class="columna1 col-lg-4">
 
 
+            </div>
+          </div>
 
+          <br><br><br>
 
+          <div class="card bg-secondary">
+            <div class="card-header">
+              <a href="#collapseOne" class="btn text-white" data-bs-toggle="collapse">
+                ¡Haz click para daber más acerca del framework!
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <p class="text-white">
+                  <il>
+                    <ul>Activity Manager. Se encarga de administrar la pila de actividades de nuestra aplicación así como su ciclo de vida.</ul>
+                    <ul>Windows Manager. Se encarga de organizar lo que se mostrará en pantalla. Básicamente crea las superficies en la pantalla que posteriormente pasarán a ser ocupadas por las actividades.</ul>
+                      <ul>Content Provider. Esta librería es muy interesante porque crea una capa que encapsula los datos que se compartirán entre aplicaciones para tener control sobre cómo se accede a la información.</ul>
+                        <ul>Views. En Android, las vistas los elementos que nos ayudarán a construir las interfaces de usuario: botones, cuadros de texto, listas y hasta elementos más avanzados como un navegador web o un visor de Google Maps.</ul>
+                          <ul>Notification Manager. Engloba los servicios para notificar al usuario cuando algo requiera su atención mostrando alertas en la barra de estado. Un dato importante es que esta biblioteca también permite jugar con sonidos, activar el vibrador o utilizar los LEDs del teléfono en caso de tenerlos.</ul>
+                            <ul>Package Manager. Esta biblioteca permite obtener información sobre los paquetes instalados en el dispositivo Android, además de gestionar la instalación de nuevos paquetes. Con paquete nos referimos a la forma en que se distribuyen las aplicaciones Android, estos contienen el archivo .apk, que a su vez incluyen los archivos .dex con todos los recursos y archivos adicionales que necesite la aplicación, para facilitar su descarga e instalación.</ul>
+                              <ul>Telephony Manager. Con esta librería podremos realizar llamadas o enviar y recibir SMS/MMS, aunque no permite reemplazar o eliminar la actividad que se muestra cuando una llamada está en curso.</ul>
+                                <ul>Resource Manager. Con esta librería podremos gestionar todos los elementos que forman parte de la aplicación y que están fuera del código, es decir, cadenas de texto traducidas a diferentes idiomas, imágenes, sonidos o layouts. En un post relacionado a la estructura de un proyecto Android veremos esto más a fondo.</ul>
+                                  <ul>Location Manager. Permite determinar la posición geográfica del dispositivo Android mediante GPS o redes disponibles y trabajar con mapas.</ul>
+                                    <ul>Sensor Manager. Nos permite manipular los elementos de hardware del teléfono como el acelerómetro, giroscopio, sensor de luminosidad, sensor de campo magnético, brújula, sensor de presión, sensor de proximidad, sensor de temperatura, etc.</ul>
+                                      <ul>Cámara: Con esta librería podemos hacer uso de la(s)  cámara(s) del dispositivo para tomar fotografías o para grabar vídeo.</ul>
+                                        <ul>Multimedia.Permiten reproducir y visualizar audio, vídeo e imágenes en el dispositivo.</ul>
+                  </il>
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <br><br><br>
 
+          <div class="row">
+            <div class="columna1 col-lg-4">
+              
+            </div>
+            <div class="columna1 col-lg-8">
+              <p>
+                Aplicaciones. En la última capa se incluyen todas las aplicaciones del dispositivo, tanto las que tienen interfaz de usuario como las que no, las nativas (programadas en C o C++) y las administradas (programadas en Java), las que vienen preinstaladas en el dispositivo y aquellas que el usuario ha instalado.
+En esta capa encontramos también la aplicación principal del sistema: Inicio (Home) o lanzador (launcher), porque es la que permite ejecutar otras aplicaciones mediante una lista y mostrando diferentes escritorios donde se pueden colocar accesos directos a aplicaciones o incluso widgets, que son también aplicaciones de esta capa.
+              </p>
+            </div>
+          </div>
       </div>
+
+      <br><br><br>
     </main>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
