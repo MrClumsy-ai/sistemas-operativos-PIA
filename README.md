@@ -10,7 +10,7 @@ Equipo #4 <br>
 - Luis Gerardo Moreno García 2055902 ITS
 - Joshua Leonardo Lucio Moreno 2061168 ITS
 - Angel Gael Mancera Rodriguez 2006909 IAS
--Santiago Ivan Cruz Cruz 2128077   ITS
+- Santiago Ivan Cruz Cruz 2128077   ITS
 
 ## TODO
 
