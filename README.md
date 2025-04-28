@@ -16,6 +16,7 @@ Equipo #4 <br>
 
 ### Temas
 
+- [ ] portada
 - [ ] introduccion
 - [ ] conclusion general
 - [x] Arquitectura, desempeno y tipo de sistema operativo
