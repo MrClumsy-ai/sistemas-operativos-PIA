@@ -10,24 +10,26 @@ Equipo #4 <br>
 - Luis Gerardo Moreno García 2055902 ITS
 - Joshua Leonardo Lucio Moreno 2061168 ITS
 - Angel Gael Mancera Rodriguez 2006909 IAS
-- Santiago Ivan Cruz Cruz 2128077   ITS
+- Santiago Ivan Cruz Cruz 2128077 ITS
 
 ## TODO
 
 ### Temas
 
-- [ ] Arquitectura, desempeno y tipo de sistema operativo
-- [ ] Control de concurrencia
-- [ ] Almacenaje, memoria y archivos
-- [ ] Redes y seguridad: sistemas desitribuidos
+- [ ] introduccion
+- [ ] conclusion general
+- [x] Arquitectura, desempeno y tipo de sistema operativo
+- [x] Control de concurrencia
+- [x] Almacenaje, memoria y archivos
+- [x] Redes y seguridad: sistemas desitribuidos
 
 ### Conclusiones
 
 - [x] Eduardo Menchaca Cano 2077725 ITS
-- [ ] Luis Gerardo Moreno García 2055902 ITS
-- [ ] Joshua Leonardo Lucio Moreno 2061168 ITS
-- [ ] Angel Gael Mancera Rodriguez 2006909 IAS
-- [ ] Santiago Ivan Cruz Cruz 2128077 ITS
+- [x] Luis Gerardo Moreno García 2055902 ITS
+- [x] Joshua Leonardo Lucio Moreno 2061168 ITS
+- [x] Angel Gael Mancera Rodriguez 2006909 IAS
+- [x] Santiago Ivan Cruz Cruz 2128077 ITS
 
 ## para trabajar
 
