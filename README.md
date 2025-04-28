@@ -14,6 +14,11 @@ Equipo #4 <br>
 
 ## TODO
 
+- [ ] texto mas grande
+- [ ] menos texto
+- [ ] linea del tiempo
+- [ ] historia
+
 ### Temas
 
 - [ ] portada
