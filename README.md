@@ -14,14 +14,14 @@ Equipo #4 <br>
 
 ## TODO
 
-- [ ] texto mas grande
+- [x] texto mas grande
 - [ ] menos texto
 - [ ] linea del tiempo
 - [ ] historia
 
 ### Temas
 
-- [ ] portada
+- [x] portada
 - [ ] introduccion
 - [ ] conclusion general
 - [x] Arquitectura, desempeno y tipo de sistema operativo
