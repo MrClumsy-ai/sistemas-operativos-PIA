@@ -1,4 +1,8 @@
-p {
+p,
+td,
+th,
+li,
+a {
   font-size: 20px;
 }
 .img1-5 {
