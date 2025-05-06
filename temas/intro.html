@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Control de concurrencia</title>
+    <title>Redes y seguridad: sistemas distribuidos</title>
     <!-- Latest compiled and minified CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,12 +11,6 @@
     />
     <link rel="stylesheet" href="PIA.css" />
   </head>
-
-  <style>
-    .img-conc {
-      text-align: center;
-    }
-  </style>
 
   <body class="text-bg-dark">
     <nav class="navbar navbar-expand-sm bg-success navbar-dark">
@@ -43,7 +37,7 @@
             >
           </li>
           <li class="nav-item">
-            <a href="../temas/concurrencia.html" class="nav-link active"
+            <a href="../temas/concurrencia.html" class="nav-link"
               >Control de concurrencia</a
             >
           </li>
@@ -53,7 +47,7 @@
             >
           </li>
           <li class="nav-item">
-            <a href="../temas/seguridad.html" class="nav-link"
+            <a href="../temas/seguridad.html" class="nav-link active"
               >Redes y seguridad: sistemas distribuidos</a
             >
           </li>
@@ -108,40 +102,16 @@
     </nav>
 
     <main class="container">
-      <h1 class="display-1">Control de concurrencia</h1>
-      <div class="p2">
-        <p> 
-          Cuando una aplicación Android se inicia, el primer thread generado por su proceso es el main thread, también conocido como UI Thread, el cual es responsable de manejar toda la lógica de la interfaz de usuario. 
-          Este es el thread más importante de una aplicación. Es el responsable de manejar toda la interacción de usuario y también enlaza juntas todas las apartes móviles de la aplicación. Las tareas de larga duración invocadas 
-          en el UI serán con toda seguridad fatales para una aplicación, y aparecerá un diálogo ANR o Aplicación No Responde.
-        <div class="img-conc">
-          <img class="mainthread" src="concurrencia/Thread_in_Android_-_ss2.png" alt="thread" height="250">
-        </div>
-        </p>
-      </div>
-      <h2>El framework HaMeR</h2>
-        <div class="p3">
-          <p>
-            El framework HaMeR permite a los threads en background enviar mensajes o postear runnables en el UI thread y también a cualquier 
-            otro MessageQueue de un thread por medio de handlers. HaMeR hace referencia a Handler, Message y Runnable. También hay otras clases 
-            importantes que operan junto con HaMeR: Looper y MessageQueue.
-          </p>
-        </div>
-        <h2>Arquitectura de Android y su papel en la concurrencia</h2>
-        <div class="p3">
-          <p>
-            La arquitectura basada en componentes de Android añade otra complejidad llamada fuga de memoria. 
-            Una fuga de memoria se produce cuando el objeto no puede ser liberado aunque ya no sea útil. 
-            En el peor de los casos, las fugas de memoria pueden provocar un fallo en la aplicación. 
-            Sin embargo, aunque las cosas no vayan tan mal, quedarse corto de memoria puede forzar recolecciones de basura más frecuentes que causan “jank”. 
-          </p>
-        </div>
-        <div class="p4">
-          <p>
-            Desde la adopción generalizada de la arquitectura MVC, la cual es una interfaz de usuario de un solo hilo, el diseño estándar 
-            de la interfaz de usuario es una cola atendida por un único hilo, en el caso de Android es el hilo principal.
-          </p>
-        </div>
+      <h1 class="display-1">Introducción</h1>
+          <div class="card-header">
+         <p>
+         Android es un sistema operativo basado en Linux, desarrollado por Google para dispositivos móviles. 
+         Su arquitectura está organizada en capas que permiten una gestión eficiente del hardware y los recursos. 
+         Ofrece buen desempeño, multitarea y control de concurrencia mediante hilos y corrutinas. Para el almacenamiento, 
+         permite usar memoria interna, externa y bases de datos como SQLite. Además, Android es seguro, con control de 
+         permisos, aislamiento de aplicaciones y cifrado, y facilita la conexión a redes y sistemas distribuidos para crear 
+         apps modernas y conectadas.
+         </p>
     </main>
 
     <!-- Latest compiled JavaScript -->
